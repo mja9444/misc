@@ -1,0 +1,43 @@
+Vtable for Base
+Base::_ZTV4Base: 4u entries
+0     (int (*)(...))0
+8     (int (*)(...))(& _ZTI4Base)
+16    (int (*)(...))Base::function1
+24    (int (*)(...))Base::function2
+
+Class Base
+   size=8 align=8
+   base size=8 base align=8
+Base (0x7f30ff8264e0) 0 nearly-empty
+    vptr=((& Base::_ZTV4Base) + 16u)
+
+Vtable for D1
+D1::_ZTV2D1: 4u entries
+0     (int (*)(...))0
+8     (int (*)(...))(& _ZTI2D1)
+16    (int (*)(...))D1::function1
+24    (int (*)(...))Base::function2
+
+Class D1
+   size=8 align=8
+   base size=8 base align=8
+D1 (0x7f30ff8e5340) 0 nearly-empty
+    vptr=((& D1::_ZTV2D1) + 16u)
+  Base (0x7f30ff826540) 0 nearly-empty
+      primary-for D1 (0x7f30ff8e5340)
+
+Vtable for D2
+D2::_ZTV2D2: 4u entries
+0     (int (*)(...))0
+8     (int (*)(...))(& _ZTI2D2)
+16    (int (*)(...))Base::function1
+24    (int (*)(...))D2::function2
+
+Class D2
+   size=8 align=8
+   base size=8 base align=8
+D2 (0x7f30ff8e5410) 0 nearly-empty
+    vptr=((& D2::_ZTV2D2) + 16u)
+  Base (0x7f30ff8265a0) 0 nearly-empty
+      primary-for D2 (0x7f30ff8e5410)
+
